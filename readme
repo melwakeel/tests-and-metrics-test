@@ -1,0 +1,24 @@
+Hello and welcome to my submission.
+
+Folder structure is as follows:
+- src: source file for netstat library
+- include: public header file for lib users
+- app: source code for the test app
+- lib: shared lib .so file generated after building the library
+- bin: binary of app generated after running build script
+- doc: html doxygen documentation of the API and a simple user guide
+- tools: scripts writen to build the library, the test app, and automate documentation generation
+
+Note curl needs to be installed on the system to properly build and use the library.
+to install the libcurl, use following command
+$ sudo apt-get install libcurl4-gnutls-dev
+
+This library took me 10 hours to complete. some of the time was spent familiarizing myself with libcurl, 
+and some time spent thinking about good names for variables and functions :)
+
+You can find readme in each of the folders detailing what to expect and how to use.
+
+if you want to save time, my advice is to go the doxygen documentation and read mainpage (index.html).
+It contains a very simple getting started code snippet and some basic rationale :)
+
+GOOD LUCK

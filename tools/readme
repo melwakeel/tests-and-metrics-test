@@ -1,0 +1,6 @@
+This folder has 4 scripts
+
+- build_lib.sh generates a new shared library .so file and replaces the old one with the newly generated file in lib/libnetstat.so
+- build_and_install_lib.sh does exactly as above but also copies the library to /usr/local/ directory for other system apps to be able to use it
+- buid_App.sh builds the test app and copies the binary to app/netstat_app 
+- generate_doc.sh updates the documentation to latest changes in library.

@@ -1,0 +1,13 @@
+this app is designed to use libnetstat and format some GET response metrics with a remote server.
+the simplest usage would be to call the app with -h argument for help
+
+$ netstat_app -h
+
+if no URL is passed, default will be www.google.com
+if no number of samples is passed, default will be 1
+app can be used without inserting additional headers.
+
+output format will look like this:
+SKTEST;<IP address of HTTP server>;<HTTP response code>;<median of CURLINFO_NAMELOOKUP_TIME>;<median of CURLINFO_CONNECT_TIME>;<median of CURLINFO_STARTTRANSFER_TIME>;<median of CURLINFO_TOTAL_TIME>
+
+you can build this app suing the script found in tools/build_app.sh. the generated binary will be found in bin/netstat_app
